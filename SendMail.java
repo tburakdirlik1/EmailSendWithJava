@@ -13,8 +13,8 @@ public class SendMail{
 
 		try{
 
-			String from ="*************@gmail.com";//GÖNDEREN
-			String pass = "************";
+			String from ="*************@gmail.com";//SENDER EMAIL
+			String pass = "************";//SENDER PASSWORD
 			String [] to = {mail};
 			String host ="smtp.gmail.com";
                             
@@ -53,68 +53,14 @@ public class SendMail{
 
 				}catch(Exception e){
 					System.out.println("hata: "+e);
-}}					
+}
+	}
 
-    public static void main(String[] args) {
-     
-        
-                        
-        String mail ="**************@gmail.com";//AlAN
+    public static void main(String[] args) {               
+        String mail ="**************@gmail.com";//RECEIVER E-MAIL
         System.out.println(mail);
         for(int i=0; i<500; i++){
-        turkishhMailSender("destek", "NABERghghLANdalyarak", mail);     
-        }
-       
-        
-        
+        turkishhMailSender("destek", "randommmessage", mail);     
+	}   
     }
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
